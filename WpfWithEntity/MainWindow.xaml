@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfWithEntity.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfWithEntity"
+        mc:Ignorable="d"
+        Title="Program" Height="325.628" Width="500.581" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Margin="0,0,0,12">
+        <Button x:Name="button" Content="Add Product" HorizontalAlignment="Left" Height="24" Margin="362,10,0,0" VerticalAlignment="Top" Width="123" Click="button_Click" TabIndex="5"/>
+        <DataGrid x:Name="dataGrid1" HorizontalAlignment="Left" Margin="12,39,0,0" VerticalAlignment="Top" Height="204" Width="473" TabIndex="6"/>
+        <TextBox x:Name="textBoxName" HorizontalAlignment="Left" Height="22" Margin="73,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="115" Text="Enter Name" GotFocus="textBox_GotFocus" TabIndex="2">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </TextBox.Foreground>
+        </TextBox>
+        <TextBox x:Name="textBoxQuantity" HorizontalAlignment="Left" Height="22" Margin="266,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" Text="Enter Quantity" GotFocus="textBox_GotFocus" PreviewTextInput="textBoxID_PreviewTextInput" TabIndex="4">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </TextBox.Foreground>
+        </TextBox>
+        <TextBox x:Name="textBoxPrice" HorizontalAlignment="Left" Height="22" Margin="193,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="68" Text="Enter Price" GotFocus="textBox_GotFocus" PreviewTextInput="textBoxID_PreviewTextInput" TabIndex="3">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </TextBox.Foreground>
+        </TextBox>
+        <Button x:Name="button1" Content="Delete Product" HorizontalAlignment="Left" Margin="73,248,0,0" VerticalAlignment="Top" Width="108" Click="button1_Click" TabIndex="8"/>
+        <TextBox x:Name="textBoxID" HorizontalAlignment="Left" Height="22" Margin="12,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" Text="Enter ID" GotFocus="textBox_GotFocus" PreviewTextInput="textBoxID_PreviewTextInput" TabIndex="7">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </TextBox.Foreground>
+        </TextBox>
+        <TextBox x:Name="textBoxID1" HorizontalAlignment="Left" Height="22" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="58" Text="Enter ID" GotFocus="textBox_GotFocus" PreviewTextInput="textBoxID_PreviewTextInput" TabIndex="1">
+            <TextBox.Foreground>
+                <SolidColorBrush Color="Black" Opacity="0.5"/>
+            </TextBox.Foreground>
+        </TextBox>
+
+    </Grid>
+</Window>
